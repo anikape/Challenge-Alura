@@ -51,7 +51,7 @@ header{
 
 label{
   color: var(--text-color);
-  width: 688px;
+  width: auto;
   height: 48px;
   font-size: 2rem;
 }
@@ -96,7 +96,7 @@ textarea:focus{
   display: flex;
   justify-content: center;
   width: 85%;
-  margin: 3rem;
+  /*margin: 3rem;*/
   align-items: center;
   flex-direction: column;
   gap: 2rem;
@@ -162,10 +162,11 @@ textarea:focus{
     transition-timing-function: linear;
 }
 
-.footer{
-  width: 60%;
+footer{
+  width: 100%;
   bottom: 0;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   font-size: 0.9em;
   height: 32px;
   margin-top: 16px;
@@ -180,8 +181,7 @@ textarea:focus{
   html{
     width:fit-content;
     justify-content: center;
-    max-width: 130vw;
-    
+    /*max-width: 130vw;*/
   }
 
   body{
@@ -277,18 +277,21 @@ textarea:focus{
        
   }
 
+  .mensagem{
+    width:fit-content;
+    justify-content: center;
+    margin-left: 32px;
+
+  }
+
   .buttons{
     display: flex;
     flex-direction: column;
   }
 
   footer{
-    width: 80vw;
-    position:relative;
-    align-self: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-
-
 }
