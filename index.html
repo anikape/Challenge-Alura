@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criptografia / Descriptografia</title>
+  <link rel="stylesheet" href="./assets/styles/sytles.css">
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="./assets/imags/logo1 (1).svg" alt="logo Alura" id="logo">
+  </header>
+
+  <main>
+    <div class="containerPrincipal">
+      <label for="texto"> Digite seu Texto </label>
+
+      <textarea id="textArea"></textarea>
+
+      <span class="span"> <img src="./assets/imags/Vector.svg">Apenas letras minúsculas e sem acento.</span>
+
+      <div class="buttons">
+
+        <button class="btn1" onClick="criptografar()">Criptografar</button>
+        <button class="btn1" onClick="descriptografar()">Descriptografar</button>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="mensagem">
+      <h3>Nenhuma mensagem encontrada </h3>
+      <p>Digite um texto que você deseja Criptografar ou Descriptografar</p>
+
+    </div>
+    <div class="desktop">
+      <img src="./assets/imags/boneco.svg" class="imagDesktop">
+      <h3>Nenhuma mensagem encontrada </h3>
+      <p>Digite um texto que você deseja <br /> Criptografar ou Descriptografar</p>
+
+
+    </div>
+
+    <div id="resultHidden">
+
+      <p id="resultado">
+
+      </p>
+
+
+
+    </div>
+
+  </main>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+<footer>
+
+  <span class="footer"> Desenvolvido por &#169; Anikape 2022 </span>
+
+</footer>
+
+
+</html>
