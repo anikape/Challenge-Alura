@@ -13,8 +13,9 @@ function criptografar() {
 
   console.log(resultCripto);
 
-  document.querySelector('#resultado').innerHTML =
-    resultCripto + '<br/><br/><br/><button class="btnCopy"> Copiar </button>';
+  document.querySelector(
+    '#resultado',
+  ).innerHTML = `${resultCripto}<br/><br/><br/><button id="copy" class="btnCopy" onClick ="copiarTexto()"> Copiar </button>`;
 
   document.querySelector('#resultHidden').style.display = 'flex';
 
@@ -33,10 +34,19 @@ function descriptografar() {
     .replace(/ufat/g, 'u');
 
   document.querySelector('#resultado').innerHTML =
-    resultCripto + '<br/><br/><br/><button class="btnCopy"> Copiar </button>';
+    resultCripto +
+    '<br/><br/><br/><button id="copy" class="btnCopy" onClick ="copiarTexto()"> Copiar </button>';
 
   document.querySelector('#resultHidden').style.display = 'flex';
 
   document.querySelector('.desktop').style.display = 'none';
   document.querySelector('.mensagem').style.display = 'none';
 }
+
+let btn = document.querySelector('#copy');
+
+btn.addEventListener('click', function (e) {
+  let textArea = document.querySelector('#resultado');
+  textArea.select();
+  document.execCommand('copy');
+});
