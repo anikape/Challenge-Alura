@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root{
   --bg: #e6c9ee;
   --bg-textarea: #f1cbf7;
@@ -7,12 +9,12 @@
 
 
 
-  html{
+html{
 
-    max-width: 100vw;
-    height: 100vh;
+  max-width: 100vw;
+  height: 100vh;
    
-  }
+}
 
 
 body{
@@ -22,10 +24,11 @@ body{
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
+  margin-left: 2rem;
+  font-family: 'Andika', sans-serif;
 }
 
 header{
-  
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -37,7 +40,7 @@ header{
 
 
 #logo{
-  margin: 2rem;
+  margin: 1rem;
   
 }
 .containerPrincipal{
@@ -52,17 +55,19 @@ header{
 label{
   color: var(--text-color);
   width: auto;
-  height: 48px;
+  height: 28px;
   font-size: 2rem;
 }
 
 textarea{
   background-color: var(--bg-textarea);
-   min-height: 200px;
-   padding: 32px;
+   min-height: 150px;
+   padding: 2px;
    font-size: 1.3em;
    resize: both; 
    border: none;
+   margin-top: 2rem;
+   width: 100%;
 }
 
 textarea:focus{
@@ -123,12 +128,13 @@ textarea:focus{
 
 #resultHidden{
   display: none;
+  flex-direction: column;
  
 }
 
 #resultado{
   /*color:#0A3871;*/
-  height:auto;
+ 
   padding: 2rem;
   flex-direction: column;
   align-items: center;
@@ -139,7 +145,6 @@ textarea:focus{
   display: flex;
   position: relative;
   background: #0A3871;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 40%;
@@ -147,8 +152,8 @@ textarea:focus{
   color: #FFF;
   border-radius: 10px;
   margin-top: 3rem;
-  margin-left: 10rem;
-  bottom: 1rem;
+  margin-left: 8rem;
+  bottom: 2rem;
   left: 0;
  
 }
@@ -173,6 +178,9 @@ footer{
   margin-top: 16px;
   padding: 5px 16px;
   position: fixed;
+  color: var(--text-color);
+  bottom: 5px;
+ font-weight: 700;
 }
 
 
@@ -181,7 +189,7 @@ footer{
 
   html{
     width:fit-content;
-    justify-content: center;
+    justify-content:center;
     /*max-width: 130vw;*/
   }
 
@@ -203,7 +211,7 @@ footer{
 
   textarea{
     width: 800px;
-    height: 400px;
+    height: 300px;
   }
 
   .desktop{
@@ -260,7 +268,7 @@ footer{
 
   footer{
     display: flex;
-    
+
   }
 }
 
