@@ -13,10 +13,7 @@ function criptografar() {
 
   console.log(resultCripto);
 
-  document.querySelector(
-    '#resultado',
-  ).innerHTML = `${resultCripto}<br/><br/><br/><button id="copy" class="btnCopy" onClick ="copiarTexto()"> Copiar </button>`;
-
+  document.querySelector('#resultado').innerHTML = resultCripto;
   document.querySelector('#resultHidden').style.display = 'flex';
 
   document.querySelector('.desktop').style.display = 'none';
@@ -33,9 +30,7 @@ function descriptografar() {
     .replace(/ober/g, 'o')
     .replace(/ufat/g, 'u');
 
-  document.querySelector('#resultado').innerHTML =
-    resultCripto +
-    '<br/><br/><br/><button id="copy" class="btnCopy" onClick ="copiarTexto()"> Copiar </button>';
+  document.querySelector('#resultado').innerHTML = resultCripto;
 
   document.querySelector('#resultHidden').style.display = 'flex';
 
@@ -43,10 +38,10 @@ function descriptografar() {
   document.querySelector('.mensagem').style.display = 'none';
 }
 
-let btn = document.querySelector('#copy');
+function copiarTexto() {
+  var mensagem = document.getElementById('resultado');
 
-btn.addEventListener('click', function (e) {
-  let textArea = document.querySelector('#resultado');
-  textArea.select();
-  document.execCommand('copy');
-});
+  navigator.clipboard.writeText(mensagem.textContent);
+  alert('Texto Copiado');
+  resultado.value = mensagem.value;
+}

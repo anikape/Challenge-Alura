@@ -127,11 +127,12 @@ textarea:focus{
 }
 
 #resultado{
-  color:#0A3871;
+  /*color:#0A3871;*/
   height:auto;
   padding: 2rem;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
 
 .btnCopy{
@@ -255,6 +256,11 @@ footer{
     margin: 1rem;
     bottom: 0;
     left: 0;
+  }
+
+  footer{
+    display: flex;
+    
   }
 }
 
